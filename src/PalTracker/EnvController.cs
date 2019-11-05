@@ -5,8 +5,7 @@ namespace PalTracker
     [Route("env")]
     public class EnvController : ControllerBase
     {
-        
-        private readonly CloudFoundryInfo _cloudFoundryEnv;
+                private readonly CloudFoundryInfo _cloudFoundryEnv;
 
         [HttpGet]
         public CloudFoundryInfo Get() => _cloudFoundryEnv;
